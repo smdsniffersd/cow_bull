@@ -1,0 +1,172 @@
+body {
+	font-family: Arial, sans-serif;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f5f5f5;
+}
+
+h1 {
+	text-align: center;
+	color: #333;
+}
+
+.game-container {
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-area {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.number-input {
+	display: flex;
+	gap: 10px;
+}
+
+#guessInput {
+	width: 200px;
+	padding: 10px;
+	font-size: 18px;
+	text-align: center;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+}
+
+.digit-buttons {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 5px;
+	margin-bottom: 10px;
+}
+
+.digit-button {
+	padding: 10px;
+	font-size: 16px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.digit-button:hover {
+	background-color: #45a049;
+}
+
+.action-buttons {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.action-button {
+	padding: 10px 15px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#submitGuess {
+	background-color: #2196F3;
+	color: white;
+}
+
+#submitGuess:hover {
+	background-color: #0b7dda;
+}
+
+#toggleNumber {
+	background-color: #ff9800;
+	color: white;
+}
+
+#toggleNumber:hover {
+	background-color: #e68a00;
+}
+
+#restartGame {
+	background-color: #9c27b0;
+	color: white;
+}
+
+#restartGame:hover {
+	background-color: #7b1fa2;
+}
+
+#secretNumber {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #f44336;
+	margin: 10px 0;
+	display: none;
+}
+
+.moves-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.moves-table th,
+.moves-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+.moves-table th {
+	background-color: #f2f2f2;
+}
+
+.moves-table tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.win-message {
+	text-align: center;
+	font-size: 24px;
+	color: #4CAF50;
+	font-weight: bold;
+	margin: 20px 0;
+	animation: celebrate 1s infinite;
+}
+
+.lose-message {
+	text-align: center;
+	font-size: 24px;
+	color: #f44336;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+@keyframes celebrate {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.clear-button {
+	background-color: #f44336;
+	color: white;
+}
+
+.clear-button:hover {
+	background-color: #d32f2f;
+}
